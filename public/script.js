@@ -460,7 +460,7 @@ $(function() {
 	};
 
 	function connect(room_name, settings) {
-		var socket = new WebSocket("ws://127.0.0.1:3000")
+		var socket = new WebSocket("ws://"+window.location.hostname+":3000")
 		setupRoomList(socket);
 
 		socket.addEventListener("open", function() {
@@ -1437,25 +1437,3 @@ $(function() {
 	};
 
 });
-
-
-/*
-     FILE ARCHIVED ON 10:36:52 Dec 17, 2012 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 21:46:12 Dec 22, 2023.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 354.702
-  exclusion.robots: 0.093
-  exclusion.robots.policy: 0.082
-  cdx.remote: 0.084
-  esindex: 0.012
-  LoadShardBlock: 245.988 (3)
-  PetaboxLoader3.datanode: 229.597 (4)
-  PetaboxLoader3.resolve: 51.377 (2)
-  load_resource: 81.386
-*/
